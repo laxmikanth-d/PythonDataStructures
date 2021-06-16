@@ -3,7 +3,7 @@ class Empty:
     pass
 
 class CircularQueue:
-    DEFAULT_CAPACITY = 10
+    DEFAULT_CAPACITY = 3
 
     def __init__(self):
         self.data = [None]*CircularQueue.DEFAULT_CAPACITY
@@ -50,7 +50,7 @@ class CircularQueue:
         walk = self.front
 
         for k in range(self.size):
-            self._data[k] = old[walk]
+            self.data[k] = old[walk]
             walk = (walk + 1)% len(old)
         
         self.front = 0
@@ -70,12 +70,11 @@ cq = CircularQueue()
 cq.enqueue(1)
 cq.enqueue(2)
 cq.enqueue(3)
-cq.enqueue(4)
-cq.enqueue(5)
-cq.enqueue(6)
+cq.enqueue(1)
+cq.enqueue(2)
 
 cq.read_queue()
 
-cq.dequeue()
+# cq.dequeue()
 
-cq.read_queue()
+# cq.read_queue()
