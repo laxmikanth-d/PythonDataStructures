@@ -50,4 +50,5 @@ ll.add(Node("data4"))
 ll.add(Node("data5"))
 ll.add(Node("data6"))
 
+# Print the contents of Linkelist
 print(ll.display(None))
