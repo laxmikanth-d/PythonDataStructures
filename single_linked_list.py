@@ -48,5 +48,6 @@ ll.add(Node("data2"))
 ll.add(Node("data3"))
 ll.add(Node("data4"))
 ll.add(Node("data5"))
+ll.add(Node("data6"))
 
 print(ll.display(None))
